@@ -1,0 +1,27 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 100,
+  "data": [
+    {
+      "collegenumber": 11,
+      "collegename": "太原科技大学",
+      "majorname": "计算机科学与技术"
+    },
+  {
+      "collegenumber": 11,
+      "collegename": "太原科技大学",
+      "majorname": "智能科学与技术"
+    },
+  {
+      "collegenumber": 11,
+      "collegename": "太原科技大学",
+      "majorname": "物联网"
+    },
+  {
+      "collegenumber": 11,
+      "collegename": "太原科技大学",
+      "majorname": "软件工程"
+    }
+  ]
+}

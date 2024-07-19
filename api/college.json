@@ -1,0 +1,27 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 100,
+  "data": [
+    {
+      "collegenumber": 11,
+      "collegename": "太原科技大学"
+    },
+  {
+      "collegenumber": 12,
+      "collegename": "中北大学"
+    },
+  {
+      "collegenumber": 13,
+      "collegename": "太原工业学院"
+    },
+  {
+      "collegenumber": 14,
+      "collegename": "清华大学"
+    },
+  {
+      "collegenumber": 15,
+      "collegename": "南京大学"
+    }
+  ]
+}

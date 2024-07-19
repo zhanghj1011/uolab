@@ -1,0 +1,51 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 100,
+  "data": [
+    {
+      "number": "10001",
+      "name": "张三",
+      "grade": "2023",
+      "college": "太原科技大学",
+      "cause": "网页设计",
+      "point": "5",
+      "getTime": "2023-10-11",
+      "inTime": "2023-10-16",
+      "getName": "李四"
+    },
+    {
+      "number": "10002",
+      "name": "张三",
+      "grade": "2023",
+      "college": "太原科技大学",
+      "cause": "网页设计",
+      "point": "5",
+      "getTime": "2023-10-11",
+      "inTime": "2023-10-16",
+      "getName": "李四"
+    },
+    {
+      "number": "10003",
+      "name": "张三",
+      "grade": "2023",
+      "college": "太原科技大学",
+      "cause": "网页设计",
+      "point": "5",
+      "getTime": "2023-10-11",
+      "inTime": "2023-10-16",
+      "getName": "李四"
+    },
+    {
+      "number": "10004",
+      "name": "张三",
+      "grade": "2023",
+      "college": "太原科技大学",
+      "cause": "网页设计",
+      "point": "5",
+      "getTime": "2023-10-11",
+      "inTime": "2023-10-16",
+      "getName": "李四"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 100,
+  "data": [
+    {
+      "className":"网页设计",
+      "teather": "张三",
+      "organize": "李四",
+      "place": "教室A",
+      "way": "线上",
+      "explain": "计算机院",
+      "point": "5",
+      "joinNumber": "200",
+      "time": "2023-10-11"
+    },
+  {
+      "className":"音乐鉴赏",
+      "teather": "张三",
+      "organize": "李四",
+      "place": "教室A",
+      "way": "线上",
+      "explain": "计算机院",
+      "point": "5",
+      "joinNumber": "200",
+      "time": "2023-10-11"
+    },
+  {
+      "className":"电影鉴赏",
+      "teather": "张三",
+      "organize": "李四",
+      "place": "教室A",
+      "way": "线上",
+      "explain": "计算机院",
+      "point": "5",
+      "joinNumber": "200",
+      "time": "2023-10-11"
+    },
+  {
+      "className":"人文历史",
+      "teather": "张三",
+      "organize": "李四",
+      "place": "教室A",
+      "way": "线上",
+      "explain": "计算机院",
+      "point": "5",
+      "joinNumber": "200",
+      "time": "2023-10-11"
+    }
+  ]
+}

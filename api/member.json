@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 100,
+  "data": [
+    {
+      "number": 10001,
+      "name": "张三",
+      "college": "太原科技大学",
+      "major": "计算机科学与技术",
+      "grade": "2022",
+      "phone": "13454567873",
+      "work": "班干部",
+      "jointime": "2023-9-10",
+      "status": "正常",
+      "expwork": "组长"
+    },
+  {
+      "number": 10002,
+      "name": "张三",
+      "college": "太原科技大学",
+      "major": "计算机科学与技术",
+      "grade": "2022",
+      "phone": "13454567873",
+      "work": "班干部",
+      "jointime": "2023-9-10",
+      "status": "正常",
+      "expwork": "组长"
+    },
+  {
+      "number": 10003,
+      "name": "张三",
+      "college": "太原科技大学",
+      "major": "计算机科学与技术",
+      "grade": "2022",
+      "phone": "13454567873",
+      "work": "班干部",
+      "jointime": "2023-9-10",
+      "status": "正常",
+      "expwork": "组长"
+    },
+  {
+      "number": 10004,
+      "name": "张三",
+      "college": "太原科技大学",
+      "major": "计算机科学与技术",
+      "grade": "2022",
+      "phone": "13454567873",
+      "work": "班干部",
+      "jointime": "2023-9-10",
+      "status": "正常",
+      "expwork": "组长"
+    },
+  {
+      "number": 10005,
+      "name": "张三",
+      "college": "太原科技大学",
+      "major": "计算机科学与技术",
+      "grade": "2022",
+      "phone": "13454567873",
+      "work": "班干部",
+      "jointime": "2023-9-10",
+      "status": "正常",
+      "expwork": "组长"
+    },
+  {
+      "number": 10006,
+      "name": "张三",
+      "college": "太原科技大学",
+      "major": "计算机科学与技术",
+      "grade": "2022",
+      "phone": "13454567873",
+      "work": "班干部",
+      "jointime": "2023-9-10",
+      "status": "正常",
+      "expwork": "组长"
+    },
+  {
+      "number": 10007,
+      "name": "张三",
+      "college": "太原科技大学",
+      "major": "计算机科学与技术",
+      "grade": "2022",
+      "phone": "13454567873",
+      "work": "班干部",
+      "jointime": "2023-9-10",
+      "status": "正常",
+      "expwork": "组长"
+    }
+  ]
+}
