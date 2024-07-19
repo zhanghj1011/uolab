@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../lib/layui-v2.6.3/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../css/public.css" media="all">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>修改成员信息</legend>
+</fieldset>
+<div class="layui-form layuimini-form">
+    <div class="layui-form-item">
+        <label class="layui-form-label required">姓名</label>
+        <div class="layui-input-block">
+            <input type="text" name="name" value="张三" class="layui-input" readonly>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label required">学号</label>
+        <div class="layui-input-block">
+            <input type="text" name="number" value="10001" class="layui-input" readonly>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label required">性别</label>
+        <div class="layui-input-block">
+            <input type="radio" name="sex" value="男" title="男" checked="" disabled>
+            <input type="radio" name="sex" value="女" title="女" disabled>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label required">年级</label>
+        <div class="layui-input-block">
+            <input type="text" name="grade" value="2022" class="layui-input" readonly>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">籍贯</label>
+        <div class="layui-input-inline">
+            <select name="quiz1" disabled>
+                <option value="">请选择省</option>
+                <option value="浙江" selected="">浙江省</option>
+                <option value="江西">江西省</option>
+                <option value="福建">福建省</option>
+            </select>
+        </div>
+        <div class="layui-input-inline">
+            <select name="quiz2" disabled>
+                <option value="">籍贯</option>
+                <option value="杭州" selected>杭州</option>
+                <option value="宁波">宁波</option>
+                <option value="温州">温州</option>
+                <option value="温州">台州</option>
+                <option value="温州">绍兴</option>
+            </select>
+        </div>
+        <div class="layui-input-inline">
+            <select name="quiz3" disabled>
+                <option value="">请选择县/区</option>
+                <option value="西湖区" selected>西湖区</option>
+                <option value="余杭区">余杭区</option>
+                <option value="拱墅区">临安市</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label required">手机</label>
+        <div class="layui-input-block">
+            <input type="number" name="phone" id="phone" value="13454567873" class="layui-input" >
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">院系</label>
+        <div class="layui-input-block">
+            <select name="college" lay-filter="college" disabled>
+                <option value="">请选择院系</option>
+                <option value="0">中北大学</option>
+                <option value="1" selected>太原科技大学</option>
+                <option value="2">太原工业学院</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">专业</label>
+        <div class="layui-input-block">
+            <select name="major" lay-filter="major" disabled>
+                <option value="">请选择专业</option>
+                <option value="0" selected>计算机科学与技术</option>
+                <option value="1">软件工程</option>
+                <option value="2">物联网</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">校内职务</label>
+        <div class="layui-input-block">
+            <select name="work" lay-filter="class" >
+                <option value="">请选择校内职务</option>
+                <option value="0" selected>班干部</option>
+                <option value="1">学生会干部</option>
+                <option value="2">社团干部</option>
+                <option value="3">无</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label required">加入日期</label>
+        <div class="layui-input-block">
+            <input type="text" name="jointime" value="2023-9-10" class="layui-input" readonly>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">状态</label>
+        <div class="layui-input-block">
+            <select name="status" lay-filter="status" >
+                <option value="">请选择状态</option>
+                <option value="0" selected>正常</option>
+                <option value="1">退出</option>
+                <option value="2">毕业</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">担任的实验室职务</label>
+        <div class="layui-input-block">
+            <select name="expwork" lay-filter="class" >
+                <option value="">请选择实验室职务</option>
+                <option value="0">秘书长</option>
+                <option value="1">副秘书长</option>
+                <option value="2">技术总监</option>
+                <option value="3">项目经理</option>
+                <option value="4" selected>组长</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">备注信息</label>
+        <div class="layui-input-block">
+            <textarea name="remark" class="layui-textarea" >备注内容</textarea>
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn layui-btn-normal" lay-submit lay-filter="saveBtn">确认保存</button>
+        </div>
+    </div>
+</div>
+<script src="../../lib/layui-v2.6.3/layui.js" charset="utf-8"></script>
+<script>
+    layui.use(['form'], function () {
+        var form = layui.form,
+            layer = layui.layer,
+            laydate = layui.laydate,
+            $ = layui.$;
+
+        //手机号校验
+        var flag = false;
+        $("#phone").blur(function () {
+            var phone = $("#phone").val();
+            var phonereg = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|17[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+            flag = phonereg.test(phone);
+            if (!flag){
+                layer.tips('手机号格式不正确', '#phone', {
+                    tips: [1,'red'],
+                    time: 2000
+                });
+            }else{
+                $("#phone").css({"border":"1px solid green"})
+            }
+        })
+
+        // 年选择器
+        laydate.render({
+            elem: '#ID-laydate-type-year',
+            type: 'year'
+        });
+
+        //时间选择器
+        laydate.render({
+            elem: '#joinTime'
+        });
+
+        //监听提交
+        form.on('submit(saveBtn)', function (data) {
+            var index = layer.alert(JSON.stringify(data.field), {
+                title: '最终的提交信息'
+            }, function () {
+
+                // 关闭弹出层
+                layer.close(index);
+
+                var iframeIndex = parent.layer.getFrameIndex(window.name);
+                parent.layer.close(iframeIndex);
+
+            });
+
+            return false;
+        });
+
+    });
+</script>
+</body>
+</html>

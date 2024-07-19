@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>首页二</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="../../lib/layui-v2.6.3/css/layui.css" media="all">
+  <link rel="stylesheet" href="../../lib/font-awesome-4.7.0/css/font-awesome.min.css" media="all">
+  <link rel="stylesheet" href="../../css/public.css" media="all">
+  <style>
+    .layui-card {border:1px solid #f2f2f2;border-radius:5px;}
+    .icon {margin-right:10px;color:#1aa094;}
+    .icon-cray {color:#ffb800!important;}
+    .icon-blue {color:#1e9fff!important;}
+    .icon-tip {color:#ff5722!important;}
+    .layuimini-qiuck-module {text-align:center;margin-top: 10px}
+    .layuimini-qiuck-module a i {display:inline-block;width:100%;height:60px;line-height:60px;text-align:center;border-radius:2px;font-size:30px;background-color:#F8F8F8;color:#333;transition:all .3s;-webkit-transition:all .3s;}
+    .layuimini-qiuck-module a cite {position:relative;top:2px;display:block;color:#666;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;font-size:14px;}
+    .welcome-module {width:100%;height:210px;}
+    .panel {background-color:#fff;border:1px solid transparent;border-radius:3px;-webkit-box-shadow:0 1px 1px rgba(0,0,0,.05);box-shadow:0 1px 1px rgba(0,0,0,.05)}
+    .panel-body {padding:10px}
+    .panel-title {margin-top:0;margin-bottom:0;font-size:12px;color:inherit}
+    .label {display:inline;padding:.2em .6em .3em;font-size:75%;font-weight:700;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em;margin-top: .3em;}
+    .layui-red {color:red}
+    .main_btn > p {height:40px;}
+    .layui-bg-number {background-color:#F8F8F8;}
+    .layuimini-notice:hover {background:#f6f6f6;}
+    .layuimini-notice {padding:7px 16px;clear:both;font-size:12px !important;cursor:pointer;position:relative;transition:background 0.2s ease-in-out;}
+    .layuimini-notice-title,.layuimini-notice-label {
+      padding-right: 70px !important;text-overflow:ellipsis!important;overflow:hidden!important;white-space:nowrap!important;}
+    .layuimini-notice-title {line-height:28px;font-size:14px;}
+    .layuimini-notice-extra {position:absolute;top:50%;margin-top:-8px;right:16px;display:inline-block;height:16px;color:#999;}
+  </style>
+</head>
+<body>
+<div class="layuimini-container">
+  <div class="layuimini-main">
+    <div class="layui-row layui-col-space15">
+      <div class="layui-col-md8">
+        <div class="layui-row layui-col-space15">
+          <div class="layui-col-md6">
+            <div class="layui-card">
+              <div class="layui-card-header"><i class="fa fa-warning icon"></i>数据统计</div>
+              <div class="layui-card-body">
+                <div class="welcome-module">
+                  <div class="layui-row layui-col-space10">
+                    <div class="layui-col-xs6">
+                      <div class="panel layui-bg-number">
+                        <div class="panel-body">
+                          <div class="panel-title">
+                            <span class="label pull-right layui-bg-blue">实时</span>
+                            <h5>2023级</h5>
+                          </div>
+                          <div class="panel-content">
+                            <h1 class="no-margins">5326</h1>
+                            <small>当前分类总记录数</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="layui-col-xs6">
+                      <div class="panel layui-bg-number">
+                        <div class="panel-body">
+                          <div class="panel-title">
+                            <span class="label pull-right layui-bg-cyan">实时</span>
+                            <h5>2022级</h5>
+                          </div>
+                          <div class="panel-content">
+                            <h1 class="no-margins">4642</h1>
+                            <small>当前分类总记录数</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="layui-col-xs6">
+                      <div class="panel layui-bg-number">
+                        <div class="panel-body">
+                          <div class="panel-title">
+                            <span class="label pull-right layui-bg-orange">实时</span>
+                            <h5>2021级</h5>
+                          </div>
+                          <div class="panel-content">
+                            <h1 class="no-margins">4543</h1>
+                            <small>当前分类总记录数</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="layui-col-xs6">
+                      <div class="panel layui-bg-number">
+                        <div class="panel-body">
+                          <div class="panel-title">
+                            <span class="label pull-right layui-bg-green">实时</span>
+                            <h5>2020级</h5>
+                          </div>
+                          <div class="panel-content">
+                            <h1 class="no-margins">3825</h1>
+                            <small>当前分类总记录数</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layui-col-md6">
+            <div class="layui-card">
+              <div class="layui-card-header"><i class="fa fa-credit-card icon icon-blue"></i>快捷入口</div>
+              <div class="layui-card-body">
+                <div class="welcome-module">
+                  <div class="layui-row layui-col-space10 layuimini-qiuck">
+                    <div class="layui-col-xs3 layuimini-qiuck-module">
+                      <a href="javascript:;" layuimini-content-href="page/user/findUser.html" data-title="查询用户" data-icon="fa fa-window-maximize">
+                        <i class="fa fa-group"></i>
+                        <cite>查询用户</cite>
+                      </a>
+                    </div>
+                    <div class="layui-col-xs3 layuimini-qiuck-module">
+                      <a href="javascript:;" layuimini-content-href="page/college/findMajor.html" data-title="查询专业" data-icon="fa fa-gears">
+                        <i class="fa fa-book"></i>
+                        <cite>查询专业</cite>
+                      </a>
+                    </div>
+                    <div class="layui-col-xs3 layuimini-qiuck-module">
+                      <a href="javascript:;" layuimini-content-href="page/college/findCollege.html" data-title="查询院系" data-icon="fa fa-file-text">
+                        <i class="fa fa-institution"></i>
+                        <cite>查询院系</cite>
+                      </a>
+                    </div>
+                    <div class="layui-col-xs3 layuimini-qiuck-module">
+                      <a href="javascript:;" layuimini-content-href="page/class/findClass.html" data-title="查询公开课" data-icon="fa fa-dot-circle-o">
+                        <i class="fa fa-eye"></i>
+                        <cite>查询公开课</cite>
+                      </a>
+                    </div>
+                    <div class="layui-col-xs3 layuimini-qiuck-module">
+                      <a href="javascript:;" layuimini-content-href="page/member/findMember.html" data-title="查询成员" data-icon="fa fa-calendar">
+                        <i class="fa fa-male"></i>
+                        <cite>查询成员</cite>
+                      </a>
+                    </div>
+                    <div class="layui-col-xs3 layuimini-qiuck-module">
+                      <a href="javascript:;" layuimini-content-href="page/member/statisticMember.html" data-title="成员统计" data-icon="fa fa-hourglass-end">
+                        <i class="fa fa-bar-chart"></i>
+                        <cite>成员统计</cite>
+                      </a>
+                    </div>
+                    <div class="layui-col-xs3 layuimini-qiuck-module">
+                      <a href="javascript:;" layuimini-content-href="page/credits/findCredits.html" data-title="查询学分" data-icon="fa fa-snowflake-o">
+                        <i class="fa fa-paw"></i>
+                        <cite>查询学分</cite>
+                      </a>
+                    </div>
+                    <div class="layui-col-xs3 layuimini-qiuck-module">
+                      <a href="javascript:;" layuimini-content-href="page/credits/statisticCredits.html" data-title="学分统计" data-icon="fa fa-search">
+                        <i class="fa fa-bar-chart"></i>
+                        <cite>学分统计</cite>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="layui-col-md12">
+            <div class="layui-card">
+              <div class="layui-card-header"><i class="fa fa-line-chart icon"></i>报表统计</div>
+              <div class="layui-card-body">
+                <div id="echarts-pie" style="width: 100%;min-height:500px"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="layui-col-md4">
+
+        <div class="layui-card">
+          <div class="layui-card-header"><i class="fa fa-bullhorn icon icon-tip"></i>系统公告</div>
+          <div class="layui-card-body layui-text">
+            <div class="layuimini-notice">
+              <div class="layuimini-notice-title">关于开展群众身边不正之风和腐败问题</div>
+              <div class="layuimini-notice-extra">2019-07-11 23:06</div>
+              <div class="layuimini-notice-content layui-hide">
+                根据省纪委监委和省教育厅关于深入开展群众身边不正之风和腐败问题集中整治工作的安排和要求，校纪委制定印发了《太原科技大学开展群众身边不正之风和腐败问题集中整治实施方案》，为深入推进集中整治工作，现将有关事项公告如下。
+
+                一、整治时间
+
+                公告之日起至2024年10月。
+
+                二、整治内容
+
+                师德师风、校园安全、食堂管理、食品安全、教辅材料、“学生餐”管理、公有住房、校园商超、维修改造、基建工程、养老社保、乡村振兴等工作中存在的损害师生利益或师生反映强烈的不正之风和腐败问题。
+
+                三、举报方式
+
+                广大师生若发现有关集中整治内容方面的问题，可通过以下方式进行举报或反映。
+
+                来访地址：主楼308办公室
+
+                来信地址：太原市万柏林区窊流路66号太原科技大学纪检监察机构
+
+                来电举报：12388
+
+                网络举报：http://shanxi.12388.gov.cn/
+
+                受理时间：法定工作日上午8:00-12:00、下午2:30-6:30
+
+                四、举报须知
+
+                （一）鼓励提倡实名举报，举报人对检举、揭发、提供的问题线索应有详实证据。
+
+                （二）举报人对检举、揭发、提供的问题线索真实性负责，不得故意捏造事实诬陷他人，对恶意举报、诬告陷害他人、制造假证等行为，将依规依纪依法追究责任。
+
+                （三）学校纪检监察机构对举报人及举报内容将严格保密、依法保护。
+
+                太原科技大学集中整治群众身边不正之风和腐败问题工作领导小组办公室
+
+                2024年7月1日
+              </div>
+            </div>
+            <div class="layuimini-notice">
+              <div class="layuimini-notice-title">关于做好我校端午节放假安排</div>
+              <div class="layuimini-notice-extra">2019-07-11 12:57</div>
+              <div class="layuimini-notice-content layui-hide">
+                根据《国务院办公厅关于2024年部分节假日安排的通知》（国办发明电〔2023〕7号）文件精神，结合我校实际，现就有关事宜通知如下：
+
+                一、放假安排
+
+                端午节放假时间为6月10日，与周末连休。
+
+                附属小学、幼儿园放假时间按照属地教育局有关规定执行。
+
+                二、假期工作要求
+
+                （一）各单位要在放假前认真组织安全隐患自查，发现隐患及时予以整改纠治。各单位的重点场所，如实验室、计算机房、资料室等要安排专人定点值班值守，确保用水、用电安全。
+
+                （二）放假期间学校继续严格执行领导带班，处级干部值班和重要部位、重点岗位24小时值班制度，各二级单位也要相应做好假期值班安排，如出现重要情况或发生重大事故、突发性事件等，在及时采取措施、快速果断处置的同时，要及时、如实上报，不得隐瞒不报或迟报、漏报。请各单位务必于2024年6月6日下班前将端午节值班安排通过企业微信报校长办公室。校长办公室将不定期对全校值班情况进行检查，并记录值班情况，适时通报。
+
+                （三）放假期间，全体师生员工外出要提前做好去向报备，处级以上干部外出要严格履行请销假手续，保持联络畅通。
+              </div>
+            </div>
+            <div class="layuimini-notice">
+              <div class="layuimini-notice-title">太原科技大学2024年高层次人才、 博士毕业生及博士辅导员招聘</div>
+              <div class="layuimini-notice-extra">2019-07-05 14:28</div>
+              <div class="layuimini-notice-content layui-hide">
+                太原科技大学是新中国第一所重型机械本科院校，是一所办学特色鲜明的多科性大学，也是我国重大技术装备领域重要的人才培养和科技研发基地。学校是教育部本科教学工作水平评估优秀高校（2006年）、教育部中西部高校基础能力建设工程支持高校（2016年）、全国第二批深化创新创业教育改革示范高校（2017年）。
+
+                学校现有专任教师1457人，集聚了一批长江学者、百千万人才、教育部新世纪优秀人才和山西省高校中青年拔尖人才、青年学术带头人、学术技术带头人、“333人才”、“青年三晋学者”等为代表的高层次人才；2017年，我校重型机械教育部工程中心主任黄庆学教授成功当选中国工程院院士。学校现有省级“1331工程”优势特色学科1个，服务产业创新学科群2个，省级重点学科3个,省级重点建设学科16个，工程学、计算机科学、材料科学3个学科位列ESI全球前1%；拥有一级学科博士学位授权点3个，一级学科硕士学位授权点19个；拥有工商管理（MBA）、法律、社会工作、电子信息、机械、材料与化工、资源与环境、能源动力、交通运输、工程管理10个硕士专业学位授权点；设有机械工程、材料科学与工程、控制科学与工程3个博士后科研流动站。
+
+                为进一步服务国家战略需求和山西省全方位高质量发展需要，推动学校打造服务地方经济社会发展的人才高地，面向海内外诚聘优秀人才，现就有关事项公告如下。
+
+                一、招聘对象
+
+                1.高层次人才，数量不限。
+
+                2.已取得博士学历、学位的博士或2024年应届博士毕业生（2024年应届毕业生须于2024年12月31日前取得毕业证书和学位证书，留学人员还须取得教育部留学服务中心学历学位认证书），博士毕业生年龄原则上不超过35周岁，博士后年龄原则上不超过38周岁。特别优秀的博士研究生年龄可以放宽至40周岁。
+
+                二、招聘条件及待遇
+
+                1.高层次人才，具体条件按照《太原科技大学“秉渊学者”评聘和管理办法（试行）》执行。（见附件1）
+
+                2.博士研究生及博士辅导员招聘条件及待遇详情见（附件2）。博士辅导员待遇参照博士毕业生二级。
+
+                三、招聘程序
+
+                （一）报名
+
+                1.报名时间：2024年5月至2024年12月。
+
+                2.报名方式
+
+                应聘人员请登录网站：https://rszp.tyust.edu.cn/zp.html#/并按要求注册报名。
+
+                3.报名材料
+
+                （1）按要求填写个人信息。
+
+                （2）证明材料(扫描件)：①身份证或护照；②本科以上各学段学历、学位证书(留学人员须提供教育部中国留学服务中心出具的国（境）外学历学位认证书和博士阶段课程学习成绩单扫描件)；暂未取得学历学位证书的2024年毕业生须提供在读证明（包含入学时间、毕业时间、所学专业等）；③具有专业技术职务的需提供任职资格证书及聘任文件；④学术荣誉证书；⑤科研成果佐证材料。
+
+                （二）资格审查
+
+                各学院(科研机构)采取函调、查阅档案资料等方式对应聘人员进行政治审查，加强对师德师风和学术道德把关，同时对应聘者学历学位、工作经历、专业方向、学术成果等进行审核。
+
+                （三）面试考核
+
+                学院（部、中心）组织专家组（须包含一名心理咨询专家），严格考察应聘者的政治立场；综合考察和评价应聘者的身心健康情况、教学科研能力、学术水平、研究方向与学科契合度、团队精神、协作意识等，确保引进人才的研究方向与学科发展需求高度契合。形成书面考察意见（须明确符合的岗位任职条件），提交人力资源部。
+
+                （四）确定人选
+
+                经学校领导集体研究确定拟聘人员名单。
+
+                (五)公示聘用
+
+                人力资源部对体检合格的人员在学校网站上进行公示，公示期为七个工作日。
+
+                对公示无异议的人员，由人力资源部负责办理有关聘用手续，签订协议，明确双方的权利义务。
+
+                四、联系方式
+
+                政策咨询
+
+                人力资源部：马老师
+
+                联系电话：18636186913
+              </div>
+            </div>
+            <div class="layuimini-notice">
+              <div class="layuimini-notice-title">太原科技大学诚邀海外青年才俊申报国家优青（海外）项目</div>
+              <div class="layuimini-notice-extra">2019-07-04 11:02</div>
+              <div class="layuimini-notice-content layui-hide">
+                一、学校介绍
+
+                太原科技大学是新中国第一所重型机械本科院校，是一所办学特色鲜明的多科性大学，也是我国重大技术装备领域重要的人才培养和科技研发基地。
+
+                学校现有省级“1331工程”优势特色学科1个，服务产业创新学科群2个，省级重点学科3个，省级重点建设学科16个，工程学、计算机科学、材料科学3个学科位列ESI全球前1%；拥有一级学科博士学位授权点3个，一级学科硕士学位授权点19个，硕士专业学位授权点10个；设有机械工程、材料科学与工程、控制科学与工程3个博士后科研流动站。
+
+                学校现有国家级协同创新中心1个；省部共建国家重点实验室培育基地1个；教育部工程研究中心1个；国家地方联合工程研究中心1个；省级重点实验室9个、省级工程研究中心8个，省级技术创新中心8个，省级科技创新（人才）团队20个；省级高等学校人文社科重点研究基地3个；省级重点马克思主义学院1个；省级中试基地1个；其他类型平台15个。
+
+                学校现有专任教师1457人，其中，高级职称教师682人（教授210人，副教授472人），博士生导师82人，硕士生导师695人，集聚了一批长江学者、百千万人才、教育部新世纪优秀人才和山西省高校中青年拔尖人才、青年学术带头人、学术技术带头人、“333人才”、“青年三晋学者”等为代表的高层次人才；2017年，我校重型机械教育部工程中心主任黄庆学教授成功当选中国工程院院士。
+
+                “十一五”以来，学校先后获得国家科技进步奖4项、国家技术发明奖1项、何梁何利基金科学与技术创新奖1项及省部级科技奖励50余项，多次参与国家重大科研项目和国家重点工程科技攻关任务，2015年授权国家发明专利数进入全国大学20强。2016年以来，学校在山西省“1331工程”建设中获财政支持总额位居全省前列。
+
+                二、项目介绍
+
+                为进一步完善科学基金人才资助体系，充分发挥科学基金引进和培养人才的功能，吸引海外优秀青年人才回国（来华）工作，国家自然科学基金委员会自2021年起，设立国家自然科学基金优秀青年科学基金项目（海外）。
+
+                优秀青年科学基金项目（海外）旨在吸引和鼓励在自然科学、工程技术等方面已取得较好成绩的海外优秀青年学者（含非华裔外籍人才）回国（来华）工作，自主选择研究方向开展创新性研究，促进青年科学技术人才的快速成长，培养一批有望进入世界科技前沿的优秀学术骨干，为科技强国建设贡献力量。
+
+                三、申请条件
+
+                （1）遵守中华人民共和国法律法规，具有良好的科学道德，自觉践行新时代科学家精神；
+
+                （2）出生日期在1984年1月1日（含）以后；
+
+                （3）具有博士学位；
+
+                （4）研究方向主要为自然科学、工程技术等；
+
+                （5）在取得博士学位后至2024年4月15日前，一般应在海外高校、科研机构、企业研发机构获得正式教学或者科研职位，且具有连续36个月以上工作经历；在海外取得博士学位且业绩特别突出的，可适当放宽工作年限要求；
+
+                （6）取得同行专家认可的科研或技术等成果，且具有成为该领域学术带头人或杰出人才的发展潜力；
+
+                （7）申请人尚未全职回国（来华）工作，或者2023年1月1日以后回国（来华）工作。获资助通知后须辞去海外工作并全职回国（来华）工作不少于3年。
+
+                四、支持条件
+
+                1.年薪：60万元+校内绩效（税前）；
+
+                2.安家费：学校提供150万元（税前）；
+
+                3.科研经费：国家提供100-300万元，学校配套提供300-600万元；
+
+                4.根据需要配备4-5名团队成员；
+
+                5.学校提供130平米周转房，并妥善解决家属就业及子女入学；
+
+                6.学校协助申请山西省和太原市各类人才补助及津贴，并享受山西省为高层次人才提供的落户、子女教育、配偶工作、人才公寓等人才政策。
+
+                以上待遇供参考，具体还可一事一议。
+
+                五、申请方式
+
+                项目申请信息系统：https://grants.nsfc.gov.cn/
+
+                六、联系我们
+
+                有意报名者请于2024年3月30日前，与学校党委人才工作办公室取得联系，并通过邮箱发送简历，邮件请注明“海外优青+姓名”。简历应包含个人基本信息、联系方式、学习和工作经历、主要学术成就等，具体申报要求以国家自然科学基金委的通知为准（https://www.nsfc.gov.cn）。
+
+                联系人：王文利、王飞
+
+                联系电话：15234057080、18234117686
+
+                联系邮箱：wlwang@tyust.edu.cn、hlhlhlwang@tyust.edu.cn
+              </div>
+            </div>
+            <div class="layuimini-notice">
+              <div class="layuimini-notice-title">关于做好我校清明节、劳动节放假</div>
+              <div class="layuimini-notice-extra">2019-06-17 11:55</div>
+              <div class="layuimini-notice-content layui-hide">
+                根据《国务院办公厅关于2024年部分节假日安排的通知》（国办发明电〔2023〕7号）文件精神，结合我校实际，现就有关事宜通知如下：
+
+                一、放假安排
+
+                （一）清明节放假时间为2024年4月4日至6日，共3天。4月7日（星期日）正常上班上课。
+
+                （二）劳动节放假时间为5月1日至5日，共5天。4月28日（星期日）、5月11日（星期六）正常上班上课。
+
+                （三）附属小学、幼儿园放假时间按照属地教育局有关规定执行。
+
+                二、假期工作要求
+
+                （一）各单位要在放假前认真组织安全隐患自查，发现隐患及时予以整改纠治。各单位的重点场所，如实验室、计算机房、资料室等要安排专人定点值班值守，确保用水、用电安全。
+
+                （二）放假期间学校继续严格执行领导带班，处级干部值班和重要部位、重点岗位24小时值班制度，各二级单位也要相应做好假期值班安排，如出现重要情况或发生重大事故、突发性事件等，在及时采取措施、快速果断处置的同时，要及时、如实上报，不得隐瞒不报或迟报、漏报。请各单位务必于2024年4月2日下班前将清明节、劳动节值班安排通过企业微信报校长办公室。校长办公室将不定期对全校值班情况进行检查，并记录值班情况，适时通报。
+
+                （三）放假期间，全体师生员工外出要提前做好去向报备，处级以上干部外出需履行请销假手续，保持联络畅通。
+
+                三、从5月6日起执行夏季作息时间。
+              </div>
+            </div>
+            <div class="layuimini-notice">
+              <div class="layuimini-notice-title">关于组织开展本科教育教学审核评估教师教学体验和本科在校生学习体验问卷调查</div>
+              <div class="layuimini-notice-extra">2019-06-13 14:53</div>
+              <div class="layuimini-notice-content layui-hide">
+                各教学单位：
+
+                根据教育部本科教育教学审核评估工作方案的要求，在全校范围内分别面向教师和学生开展由教育部教育质量评估中心组织的教师教学体验和本科在校生学习体验问卷调查工作，调查结果将用于生成学校的《教师教学体验调查报告》和《在校生学习体验调查报告》。具体事项如下：
+
+                一、调查时间
+
+                2024年05月17日00:00:00—2024年05月24日00:00:00
+
+                二、调查对象
+
+                教师教学体验调查对象：本科教学单位专任教师及辅导员
+
+                在校生学习体验调查对象：本科在校学生
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="layui-card">
+          <div class="layui-card-header"><i class="fa fa-fire icon"></i>版本信息</div>
+          <div class="layui-card-body layui-text">
+            <table class="layui-table">
+              <colgroup>
+                <col width="100">
+                <col>
+              </colgroup>
+              <tbody>
+              <tr>
+                <td>框架名称</td>
+                <td>
+                  UOlab联合开发实验室管理平台
+                </td>
+              </tr>
+              <tr>
+                <td>当前版本</td>
+                <td>v2.0.0</td>
+              </tr>
+              <tr>
+                <td>主要特色</td>
+                <td>零门槛 / 响应式 / 清爽 / 极简</td>
+              </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="layui-card">
+          <div class="layui-card-header"><i class="fa fa-paper-plane-o icon"></i>作者心语</div>
+          <div class="layui-card-body layui-text layadmin-text">
+            <p>本平台基于layuimini的iframe2版本进行开放实现。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../../lib/layui-v2.6.3/layui.js" charset="utf-8"></script>
+<script src="../../js/lay-config.js?v=1.0.4" charset="utf-8"></script>
+<script>
+  layui.use(['layer', 'miniTab','echarts'], function () {
+    var $ = layui.jquery,
+            layer = layui.layer,
+            miniTab = layui.miniTab,
+            echarts = layui.echarts;
+
+    miniTab.listen();
+
+    /**
+     * 查看公告信息
+     **/
+    $('body').on('click', '.layuimini-notice', function () {
+      var title = $(this).children('.layuimini-notice-title').text(),
+              noticeTime = $(this).children('.layuimini-notice-extra').text(),
+              content = $(this).children('.layuimini-notice-content').html();
+      var html = '<div style="padding:15px 20px; text-align:justify; line-height: 22px;border-bottom:1px solid #e2e2e2;background-color: #2f4056;color: #ffffff">\n' +
+              '<div style="text-align: center;margin-bottom: 20px;font-weight: bold;border-bottom:1px solid #718fb5;padding-bottom: 5px"><h4 class="text-danger">' + title + '</h4></div>\n' +
+              '<div style="font-size: 12px">' + content + '</div>\n' +
+              '</div>\n';
+      parent.layer.open({
+        type: 1,
+        title: '系统公告'+'<span style="float: right;right: 1px;font-size: 12px;color: #b1b3b9;margin-top: 1px">'+noticeTime+'</span>',
+        area: '300px;',
+        shade: 0.8,
+        id: 'layuimini-notice',
+        btn: ['查看', '取消'],
+        btnAlign: 'c',
+        moveType: 1,
+        content:html,
+        success: function (layero) {
+          var btn = layero.find('.layui-layer-btn');
+          btn.find('.layui-layer-btn0').attr({
+            href: 'https://gitee.com/zhongshaofa/layuimini',
+            target: '_blank'
+          });
+        }
+      });
+    });
+
+    //饼图
+    var chartDom = document.getElementById('echarts-pie');
+    var myChart = echarts.init(chartDom);
+    var option;
+
+    option = {
+      tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b}: {c} ({d}%)'
+      },
+      legend: {
+        data: [
+          '工学',
+          '理学',
+          '文学',
+          '经济学',
+          '管理学',
+          '法学',
+          '艺术学',
+          '教育学',
+          '2020级',
+          '2023级',
+          '2022级',
+          '2021级'
+        ]
+      },
+      series: [
+        {
+          name: '人数',
+          type: 'pie',
+          selectedMode: 'single',
+          radius: [0, '30%'],
+          label: {
+            position: 'inner',
+            fontSize: 14
+          },
+          labelLine: {
+            show: false
+          },
+          data: [
+            { value: 3825, name: '2020级' },
+            { value: 4543, name: '2021级' },
+            { value: 4642, name: '2022级' },
+            { value: 5326, name: '2023级', selected: true }
+          ]
+        },
+        {
+          name: '人数',
+          type: 'pie',
+          radius: ['45%', '60%'],
+          labelLine: {
+            length: 30
+          },
+          label: {
+            formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}  ',
+            backgroundColor: '#F6F8FC',
+            borderColor: '#8C8D8E',
+            borderWidth: 1,
+            borderRadius: 4,
+            rich: {
+              a: {
+                color: '#6E7079',
+                lineHeight: 22,
+                align: 'center'
+              },
+              hr: {
+                borderColor: '#8C8D8E',
+                width: '100%',
+                borderWidth: 1,
+                height: 0
+              },
+              b: {
+                color: '#4C5058',
+                fontSize: 14,
+                fontWeight: 'bold',
+                lineHeight: 33
+              },
+              per: {
+                color: '#fff',
+                backgroundColor: '#4C5058',
+                padding: [3, 4],
+                borderRadius: 4
+              }
+            }
+          },
+          data: [
+            { value: 1048, name: '工学' },
+            { value: 335, name: '理学' },
+            { value: 310, name: '文学' },
+            { value: 251, name: '经济学' },
+            { value: 234, name: '管理学' },
+            { value: 147, name: '法学' },
+            { value: 135, name: '艺术学' },
+            { value: 102, name: '教育学' }
+          ]
+        }
+      ]
+    };
+
+    option && myChart.setOption(option);
+
+
+    // echarts 窗口缩放自适应
+    window.onresize = function(){
+      chartDom.resize();
+    }
+
+  });
+</script>
+</body>
+</html>
